@@ -1,0 +1,131 @@
+input,
+.form-control {
+    height: 39px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* Select fix for BS 4*/
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.bootstrap-select.show > .dropdown-menu > .dropdown-menu {
+    display: block;
+}
+
+.bootstrap-select > .dropdown-menu > .dropdown-menu li.hidden {
+    display: none;
+}
+
+.bootstrap-select > .dropdown-menu > .dropdown-menu li a {
+    display: block;
+    width: 100%;
+    padding: 3px 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #292b2c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+
+/**/
+
+/* Chceckbox */
+
+.custom-checkbox {
+    min-height: 2.5rem;
+    padding-left: 3.5rem;
+    margin-bottom: 10px;
+    display: block;
+
+    .custom-control-description {
+        font-size: 1.4rem;
+        letter-spacing: $letter-30;
+    }
+
+    .custom-control-indicator {
+        background: #fff;
+
+        // border:1px solid #009640;
+        border: 2px solid #ebebeb;
+        width: 20px;
+        top: 0;
+        height: 20px;
+    }
+
+    .custom-control-input:checked ~ .custom-control-indicator {
+        background: #fff;
+        border: 2px solid #009640;
+    }
+
+    .custom-control-input:checked ~ .custom-control-indicator::after {
+        content: "\77";
+        font-family: "bsnamyslow" !important;
+        font-size: 1.4rem;
+        color: #009640;
+        position: relative;
+        right: -4px;
+        top: -3px;
+    }
+
+    .custom-control-input:focus ~ .custom-control-indicator {
+        box-shadow: none;
+    }
+
+    .custom-control-input:active ~ .custom-control-indicator {
+        background: #fff;
+    }
+}
+
+/* Placeholder */
+
+.form-control::-webkit-input-placeholder {
+    color: #bebebe;
+}
+
+/* WebKit, Blink, Edge */
+.form-control:-moz-placeholder {
+    color: #bebebe;
+}
+
+/* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder {
+    color: #bebebe;
+}
+
+/* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder {
+    color: #bebebe;
+}
+
+/* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder {
+    color: #bebebe;
+}
+
+/* Microsoft Edge */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,356 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Portal rowerowy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#279237">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#279237">
+
+    <link rel="stylesheet" href="https://use.typekit.net/etz7ozc.css">
+<!-- build:css css/style.min.css -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- endbuild -->
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+
+    <body>
+
+        <div class="pageOverlay"></div>
+        <header class="header-main" style="background-image: url('img/img_header.svg')">
+            
+	<div class="container fixed-top">
+		<a href="index.html" class="header-main__logo" title="Przejdź do strony głównej"><img src="img/logo_portalrowerowy.svg"  alt="Średzki portal rowerowy - logo"></a>
+		<button type="button" class="header-main__nav-toggle" id="nav-toggle"><span class="icon icon-menu" aria-label="Menu"></span></button>
+		<nav class="header-main__nav" id="main-nav" role="navigation">
+			<ul class="header-main__nav__list">
+				<li><a href="mapa.html">Mapa rowerowa</a></li>
+				<li><a href="projekt.html">O projekcie</a></li>
+				<li><a href="aktualności.html">Aktualności</a></li>
+				<li><a href="powiat.html">O powiecie</a></li>
+				<li><a href="zabytki.html">Przyroda i zabytki</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="container">
+		<section class="entry-content">
+            <div class="container">
+                <div class="entry-content__text">
+                    <h1 class="primary-heading">Trasy rowerowe</h1>
+                    <h2 class="secondary-heading">Odkryj piękno Powiatu Średzkigo</h2>
+                    <p class="description">
+                        Szanowni Państwo, z prawdziwą przyjemnością witam Państwa na nowym portalu – Rowerowy Powiat Średzki. Radość ta wynika przynajmniej z dwóch powodów. Pierwszy to rosnąca liczba ścieżek rowerowych, których budowa ma wiele korzyści i zalet.
+                    </p>
+                    <a href="projekt.html" class="btn-outline">Zobacz więcej</a>
+                </div>
+            </div>
+        </section>
+        <!-- <img src="img/img_header.svg" alt="" class="img-fluid entry-mobile-bg"> -->
+	</div>
+
+        </header>
+
+
+        <main class="main">
+            <section class="section-map-route">
+                <div class="map-route-label">
+                    <img src="img/logos/icon_logo_bicycle.svg" class="img-fluid" alt="">
+                    <span>Mapa tras rowerowych</span>
+                </div>
+                <div class="map-infoWindow">
+                    <span>Rowerowy Szlak Odry</span>
+                    <div class="map-infoWindow__content">
+                        <div class="content-item">
+                            <span class="icon icon-double-arrow" aria-hidden="true"></span>
+                            <span class="txt">256km</span>
+                        </div>
+                        <div class="content-item">
+                            <span class="icon icon-camera" aria-hidden="true"></span>
+                            <span class="txt">3 atrakcje</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="map-route"></div>
+            </section>
+            <section class="section-place">
+                <div class="container">
+                    <header class="header-section">
+                        <h2 class="primary-heading">Odkrywaj i podziwiaj</h2>
+                        <a href="zabytki.html" class="btn-outline hidden-xs">Zobacz wszystkie</a>
+                    </header>
+                    <!-- items content -->
+                    <div class="item-place">
+                        <figure>
+                            <img src="items/akwen_miejski_sroda_slaska.jpg" class="coverImage" alt="">
+                        </figure>
+                        <div class="item-place__description">
+                            <h3 class="secondary-heading">Akwen miejski Kajaki Środa Śląska <small>Środa Śląska</small></h3>
+                            <p class="txt">
+                                Powierzchnia akwenu to: 4,5 ha. W akwenie żyją: amur, karp, lin, płoć, szczupak, sum, okoń, karaś. Przy akwenie jest wypożyczalnia kajaków i rowerów wodnych. Punkt znajduje się przy akwenie Kajaki w Środzie Śląskiej. W czerwcu, lipcu i sierpniu czynny jest do godziny 20. 
+                            </p>
+                        </div>
+                        <a href="zabytki.html" class="text-link">Więcej</a>
+                    </div>
+                    <!-- / -->
+                    <!-- items content -->
+                    <div class="item-place">
+                        <figure>
+                            <img src="items/kosciol_filialny_bukowek.jpg" class="coverImage" alt="">
+                        </figure>
+                        <div class="item-place__description">
+                            <h3 class="secondary-heading">Kościół filialny pod wezwaniem św. Jerzego w Bukówku <small>Bukówek</small></h3>
+                            <p class="txt">
+                                kościół wzmiankowany w 1282 r., obecny gotycki wzniesiony w początku XVI w., przebudowany w II połowie XIX w., remontowany w 1969 i 1986 r. We wnętrzu barokowy ołtarz z końca XVII w. z obrazem św. Jerzego i drewnianymi rzeźbami aniołów, renesansowa chrzcielnica z piaskowca z końca XVI w., gotycki portal zakrystii z początku XVI w. 
+                            </p>
+                        </div>
+                        <a href="zabytki.html" class="text-link">Więcej</a>
+                    </div>
+                    <!-- / -->
+                    <!-- items content -->
+                    <div class="item-place">
+                        <figure>
+                            <img src="items/zamek_na_wodzie_wojnowice.jpeg" class="coverImage" alt="">
+                        </figure>
+                        <div class="item-place__description">
+                            <h3 class="secondary-heading">Zamek na Wodzie w Wojnowicach <small>Wojnice</small></h3>
+                            <p class="txt">
+                                Wzniesiony w 1513 r. na wzór dawnych rycerskich kaszteli. Przebudowany w latach 1545-1562 dla wrocławskich mieszczan Bonerów (liczne herby na ścianie frontowej). Elementem unikatowym jest posadzenie zamku na wodzie, na konstrukcji z pali dębowych wypełnionych głazami i gliną. Początkowo miał kształt podkowy, którą pózniej zamknięto czwartym skrzydłem. 
+                            </p>
+                        </div>
+                        <a href="zabytki.html" class="text-link">Więcej</a>
+                    </div>
+                    <!-- / -->
+                    <!-- items content -->
+                    <div class="item-place">
+                        <figure>
+                            <img src="items/rezerwat_przyrody_zabor.jpg" class="coverImage" alt="">
+                        </figure>
+                        <div class="item-place__description">
+                            <h3 class="secondary-heading">Rezerwat przyrody „Zabór” <small>Zabór Wielki</small></h3>
+                            <p class="txt">
+                                Obejmuje obszar 34,72 ha w pobliżu wsi Zabór Wielki. Utworzony w 1959 roku na mokradłach znanych już od 1360 r. jako „Diabelskie Trzęswisko”. Chroni naturalny las łęgowy, w którym dominuje olsza czarna. Lasy te przez kilka miesiecy w roku zalane są wodą, dlatego drzewa rosną na wysokich kępach.
+                            </p>
+                        </div>
+                        <a href="zabytki.html" class="text-link">Więcej</a>
+                    </div>
+                    <!-- / -->
+                    <!-- items content -->
+                    <div class="item-place">
+                        <figure>
+                            <img src="items/kosciol_poewangelicki_bukowek.jpg" class="coverImage" alt="">
+                        </figure>
+                        <div class="item-place__description">
+                            <h3 class="secondary-heading">Kościół poewangelicki w Bukówku <small>Bukówek</small></h3>
+                            <p class="txt">
+                                Neogotycki kościół poewangelicki z II połowy XIX w. murowany, tynkowany, jednonawowy, z pięciobocznym prezbiterium, z wieżą od południa kwadratową, przechodzącą w ostatniej kondygnacji w ośmiobok, Nie użytkowany od lat czterdziestych, obecnie użytkowany przez Dekanat w Malczycach.
+                            </p>
+                        </div>
+                        <a href="zabytki.html" class="text-link">Więcej</a>
+                    </div>
+                    <!-- / -->
+                    <div class="content-btn text-center">
+                        <a href="zabytki.html" class="btn-outline">Poznaj więcej atrakcji</a>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <hr class="line-styles">
+            </div>
+            <section class="section-news">
+                <div class="container">
+                    <header class="header-section">
+                        <h2 class="primary-heading">Aktualności</h2>
+                        <a href="zabytki.html" class="btn-outline">Zobacz wszystkie</a>
+                    </header>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <a href="aktualnosci.html" class="news-item">
+                                <figure>
+                                    <img src="items/news_1.jpg" class="coverImage" alt="">
+                                </figure>
+                                <div class="news-item__description">
+                                    <time>22.03.2018</time>
+                                    <h3 class="secondary-heading">Polski zautomatyzowany wielopoziomowy parking rowerowy.</h3>
+                                    <p class="txt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem.</p>
+                                </div>
+                                <span class="text-link">Czytaj więcej</span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a href="aktualnosci.html" class="news-item">
+                                <figure>
+                                    <img src="items/news_2.jpg" class="coverImage" alt="">
+                                </figure>
+                                <div class="news-item__description">
+                                    <time>22.03.2018</time>
+                                    <h3 class="secondary-heading">Roovee – propozycja roweru publicznego.</h3>
+                                    <p class="txt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem.</p>
+                                </div>
+                                <span class="text-link">Czytaj więcej</span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a href="aktualnosci.html" class="news-item">
+                                <figure>
+                                    <img src="items/news_3.jpg" class="coverImage" alt="">
+                                </figure>
+                                <div class="news-item__description">
+                                    <time>22.03.2018</time>
+                                    <h3 class="secondary-heading">Rowerowy Rajd Ludzi Pracy.</h3>
+                                    <p class="txt">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem.</p>
+                                </div>
+                                <span class="text-link">Czytaj więcej</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <hr class="line-styles">
+            </div>
+            <section class="section-partners-logo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <a href="#" target="_blank" class="logo-content">
+                                <img src="img/logos/powiat_średzki.svg" alt="Powiat średzki - logo">
+                                <h3 class="title"><b>Powiat Średzki</b></h3>
+                                <span>www.powiat-sredzki.pl</span>
+                            </a>
+                        </div>
+                        <div class="col-12 logo-txt-content">
+                            <a href="#" target="_blank" class="logo-content">
+                                <span>Gminy<br> partnerskie</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="#" target="_blank" class="logo-content">
+                                <img src="img/logos/Środa_Śląska.svg" alt="Środa Śląska - logo">
+                                <h3 class="title"><b>Środa Śląska</b></h3>
+                                <span>www.kostomloty.pl</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="#" target="_blank" class="logo-content">
+                                <img src="img/logos/gmina_Udanin.svg" alt="Gmina Udanin - logo">
+                                <h3 class="title"><b>Gmina Udanin</b></h3>
+                                <span>www.udanin.pl</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="#" target="_blank" class="logo-content">
+                                <img src="img/logos/gmina_Malczyce.svg" alt="Gmina Malczyce - logo">
+                                <h3 class="title"><b>Gmina Malczyce</b></h3>
+                                <span>www.malczyce.pl</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="#" target="_blank" class="logo-content">
+                                <img src="img/logos/gmina_Miękinia.svg" alt="Gmina Miękinia - logo">
+                                <h3 class="title"><b>Gmina Miękinia</b></h3>
+                                <span>www.miekinia.pl</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-main">
+            <div class="container">
+	<div class="row">
+		<div class="col-12 col-md-2">
+			<nav class="footer-main__nav">
+				<h5 class="footer-main__nav__heading">Serwis</h5>
+				<ul class="footer-main__nav__list">
+					<li><a href="mapa.html">Mapa rowerowa</a></li>
+					<li><a href="trasy.html">Trasy rowerowe</a></li>
+					<li><a href="aktualnosci.html">Aktualności</a></li>
+					<li><a href="zabytki.html">Przyroda i zabytki</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-12 col-md-2">
+			<nav class="footer-main__nav">
+				<h5 class="footer-main__nav__heading">Informacje</h5>
+				<ul class="footer-main__nav__list">
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="index.html">Polityka prywatności</a></li>
+					<li><a href="index.html">Mapa serwisu</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-12 col-md-2">
+			<nav class="footer-main__nav">
+				<h5 class="footer-main__nav__heading">Kontakt</h5>
+				<ul class="footer-main__nav__list">
+					<li><a href="tel:+44 345 678 903">+44 345 678 903</a></li>
+					<li><a href="mailto:rowerowy@powiat-sredzki.pl">rowerowy@powiat-sredzki.pl</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-12 col-md-6">
+			<div class="footer-main__logo">
+				<img src="img/logos/logo_ue.svg" class="img-fluid" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="row footer-main__copyrights">
+	 	<div class="col-12">
+            <hr class="line-styles">
+	 	</div>
+		<div class="col-12 col-sm-6">
+			<span class="copyrights">© Rowerowy Powiat Średzki 2018. Wszelkie prawa zasteżone.</span>
+		</div>
+		<div class="col-12 col-sm-6">
+			<span class="authors">Realizacja <a href="http://www.novapr.pl" target="_blank">NovaPR</a></span>
+		</div>
+	</div>
+</div>
+        </footer>
+
+            <!-- build:js js/vendor/scripts.min.js -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.cover.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/plugins.min.js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+        <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js">i</script>
+        <script>
+            var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+            });
+            
+            
+            var map = new L.Map("map-route", {
+                center: new L.LatLng(51.1333,17.0532),
+                zoom: 10
+            });
+            
+            
+            map.addLayer(layer);                                 
+            
+            
+            
+           
+        </script>
+
+    </body>
+</html>

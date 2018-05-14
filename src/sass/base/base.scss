@@ -1,0 +1,90 @@
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: $font-base;
+    font-size: $font-base-size;
+    line-height: $font-base-line-mobile;
+    font-weight: normal;
+    font-style: normal;
+    background:#fff;
+    color: $native-color;
+    padding-top: 60px;
+    @media (min-width:$lg){
+        font-size:$font-native-size-lg;
+      
+    }
+
+}
+
+p
+{
+    font-size: $font-base-size;
+      line-height: $font-base-line-mobile;
+      @media (min-width:$lg){
+        font-size:$font-native-size-lg;
+         line-height:$font-base-line-desktop;
+    }
+}
+
+a
+{
+    text-decoration: none;
+    color: $native-color;
+
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: $native-hover;
+}
+a:focus,
+a:active
+{
+    outline: none;
+    text-decoration: none;
+
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+}
+textarea:focus,
+div.bootstrap-select .dropdown-toggle:focus,
+button,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: #d7d7d7;
+  box-shadow:none;
+  outline: 0 none !important;
+}

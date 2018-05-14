@@ -1,0 +1,87 @@
+.footer-main {
+    background: #2e3031;
+    padding: 30px 0 15px;
+
+    &__nav {
+        &__heading {
+            color: #fff;
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom:1px solid #525354;
+            padding: 0 0 9px;
+            position:relative;
+    		
+        }
+        &__heading::after{
+        	content:"\71";
+        	  font-family: "portalrowerowy" !important;
+        	  color:#fff;
+        	  font-size: 0.8rem;
+        	  position:absolute;
+        	  display: inline-block;
+        	  right:8px;
+        	  top:1px;
+        	  transform:rotate(90deg);
+        	  text-transform: initial;
+        	  transition:all 150ms ease-in-out;
+        }
+        &__heading.active::after{
+        	transform:rotate(-90deg);
+        }
+        &__heading.active{
+        text-decoration:underline;
+        }
+
+
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 15px;
+            display: none;
+
+            li {
+                display: block;
+
+                a {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    margin-bottom: 5px;
+                    font-weight:normal;
+                    &:hover,
+                    &:focus{
+                    	text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &__logo{
+    	margin-top: 30px;
+    }
+    &__copyrights{
+    	//margin-top: 15px;
+    	text-align: center;
+    	.line-styles{
+    		border-top:1px solid #ededed;
+    		opacity:0.14;
+    		margin: 15px 0;
+    	}
+    	.copyrights,
+    	.authors{
+    		color:#fff;
+    		font-size: 1.2rem;
+    		display: block;
+    		line-height:1.8rem;
+    		a{
+    			color:#fff;
+    			  &:hover,
+                    &:focus{
+                    	text-decoration: underline;
+                    }
+    		}
+    	}
+    }
+}

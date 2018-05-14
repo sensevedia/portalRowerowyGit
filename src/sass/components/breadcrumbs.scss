@@ -1,0 +1,80 @@
+.breadcrumbs {
+    display: block;
+
+    //margin-bottom: 10px;
+    text-align: left;
+
+    // margin-top: 11px;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: none;
+            margin-right: 18px;
+            position: relative;
+            font-size: 1.3rem;
+            color: $breadcrumbs-color;
+
+            @media (max-width: 767px) {
+                padding-left: 9px;
+            }
+
+            @media (min-width: $md) {
+                display: inline-block;
+            }
+
+            a {
+                display: block;
+                font-size: 1.3rem;
+                color: $breadcrumbs-color;
+                line-height:1rem;
+
+                //opacity: 0.7;
+
+                &:hover,
+                &:focus {
+                    color: $native-hover;
+
+                    //opacity: 1;
+               
+                }
+            }
+
+            span {
+                font-size: 1.3rem;
+                color: $breadcrumbs-color;
+            }
+        }
+
+        li:nth-last-child(2) {
+            display: inline-block !important;
+        }
+
+        li:after {
+            @media (max-width: 767px) {
+                transform: rotate(-180deg);
+                top: -0.5rem;
+                left: 0;
+            }
+
+            content: "\71";
+            font-family: "portalrowerowy" !important;
+            position: absolute;
+            right: -7px;
+            top: 0.48rem;
+            display: inline-block;
+            font-size: 0.6rem;
+            color: $breadcrumbs-color;
+            height: 10px;
+            width: 1px;
+            line-height:0;
+        }
+
+        li:last-of-type:after {
+            display: none;
+        }
+    }
+}

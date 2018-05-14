@@ -1,0 +1,41 @@
+.pageOverlay {
+    background: rgba(57, 75, 79, 0.55);
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+
+    @media (min-width: $lg) {
+        z-index: 60;
+    }
+}
+
+.pageOverlay {
+    bottom: -5px;
+}
+
+.pageOverlay.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden-xs{
+    @media (max-width:767px){
+        display: none !important;
+    }
+}
+
+.content-btn{
+    margin-top: 10px;
+}
+
+.line-styles{
+     border-top: solid 1px #707070;
+     opacity:0.34;
+}
